@@ -14,7 +14,6 @@
 
     <div class="layout">
         This is part of the layout
-        kslk lsdfjs af;lskajdf 
     </div>
 
     @*@RenderBody()*@
@@ -24,7 +23,7 @@
         This is part of the layout
     </div>
 
-    @if (IsSectionDefined("Footer")) { }
+    @if (IsSectionDefined("Footer")) { 
         @RenderSection("Footer")
     } else {
         <h4>This the default footer</h4>
@@ -32,6 +31,8 @@
     <div class="layout">
         This is part of the layout
     </div>
+
+    @RenderSection("Scripts", false)
 
 </body>
 </html>
